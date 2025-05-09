@@ -4,13 +4,60 @@
 
 <head>
 	<link rel="stylesheet" href="styles.css">
+	<style>
+		:root{
+		background-color:yellow;
+		
+		}
+		li{
+			background-color:gray;
+			width:50%;
+			height"100px;
+			margin:5px 0;
+		}
+		
+        li:nth-child(odd) {
+            background-color: white;
+        }
+
+        li:first-child,
+        li:last-child {
+            font-size: 22px;
+        }
+
+        li:nth-last-child(2) {
+            background-color: pink;
+        }
+		p:first-child{
+			background-color:black;
+			color:white;
+		}
+		p:nth-child(2){
+			color:black;
+		}
+		p:last-child{
+			color:red;
+		}
+	</style>
 </head>
 
 <body>
 	<!-- the entire body must be written by student -->
     <script type="text/javascript" src="./script.js">
 </script>
+<p id="first-child">Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis, facere incidunt quibusdam a suscipit odio iste in repudiandae 
+	consectetur dolorum excepturi, nihil officiis!</p>
+	<p>second paragraph with second text color </p>
+	<p>third paragraph with red text</p>
+	
 
+	<ul>
+	<li>First Item</li>
+	<li>second item</li>
+	<li>third item</li>
+	<li>fourth item</li>
+	<li>fifth item</li>
+		</ul>
 </body>
 
 </html>

@@ -3,55 +3,63 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-   <title>Pseudo Classes Implementation</title>
+    <title>Pseudo Classes Implementation</title>
     <style>
+        /* Set the entire page's background color */
         :root {
             background-color: rgb(135, 206, 235);
         }
 
-        p:first-child {
-            color: white;
-            background-color:black;
+        /* Style for the first paragraph */
+        #first-child {
+            color: white; /* White text */
+            background-color: black; /* Black background */
         }
 
-        p:nth-child(2) {
+        /* Style for the second paragraph */
+        #nth-child {
             color: black; /* Standard text color */
         }
 
-        p:last-child {
-            color: red;
+        /* Style for the third paragraph */
+        #last-child {
+            color: red; /* Red text */
         }
 
+        /* Unordered list styles */
         ul {
             list-style-type: none; /* Remove default bullets */
             padding: 0; /* Remove default padding */
         }
 
         li {
-            background-color: gray;
-            width: 50%;
-            padding: 10px;
-            margin: 5px 0; /* Add some margin between items */
+            background-color: gray; /* Default background color */
+            width: 50%; /* Set width to 50% */
+            padding: 10px; /* Padding for each item */
+            margin: 5px 0; /* Margin between items */
         }
 
+        /* Odd items will have a white background */
         li:nth-child(odd) {
             background-color: white;
         }
 
+        /* First and last items font size */
         li:first-child,
         li:last-child {
             font-size: 22px;
         }
 
+        /* Third-to-last item background color */
         li:nth-last-child(2) {
             background-color: pink;
         }
     </style>
 </head>
 <body>
-    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis, facere incidunt quibusdam a suscipit odio iste in repudiandae consectetur dolorum excepturi, nihil officiis!</p>
-    <p>Second paragraph with standard text color.</p>
-    <p>Third paragraph with red text.</p>
+    <p id="first-child">Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis, facere incidunt quibusdam a suscipit odio iste in repudiandae consectetur dolorum excepturi, nihil officiis!</p>
+    <p id="nth-child">Second paragraph with standard text color.</p>
+    <p id="last-child">Third paragraph with red text.</p>
 
     <ul>
         <li>First Item</li>

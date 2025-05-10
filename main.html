@@ -9,17 +9,16 @@
             background-color: rgb(135, 206, 235);
         }
 
-        p:first-child {
+          #first-child {
             color: white;
             background-color: black;
-        }
+       }
 
-        p:nth-child(2) {
+        #nth-child(2) {
             color: black; /* Standard text color */
         }
-
-        p:last-child {
-            color: red;
+        #last-child {
+            color:red;
         }
 
         ul {
@@ -49,9 +48,9 @@
     </style>
 </head>
 <body>
-    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis, facere incidunt quibusdam a suscipit odio iste in repudiandae consectetur dolorum excepturi, nihil officiis!</p>
-    <p>Second paragraph with standard text color.</p>
-    <p>Third paragraph with red text.</p>
+    <p id="first-child">Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis, facere incidunt quibusdam a suscipit odio iste in repudiandae consectetur dolorum excepturi, nihil officiis!</p>
+    <p id="nth-child(2)">Second paragraph with standard text color.</p>
+    <p id="last-child">Third paragraph with red text.</p>
 
     <ul>
         <li>First Item</li>

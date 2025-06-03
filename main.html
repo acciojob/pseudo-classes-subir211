@@ -5,68 +5,47 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Pseudo Classes Implementation</title>
     <style>
-        /* Set the entire page's background color */
-        :root {
-            background-color: rgb(135, 206, 235);
-        }
-
-        /* Style for the first paragraph */
-        p:first-child {
-            color: white; /* White text */
-            background-color: black; /* Black background */
-        }
-
-        /* Style for the second paragraph */
-        p:nth-child(2) {
-            color: black; /* Standard text color */
-        }
-
-        /* Style for the third paragraph */
-        p:last-child {
-            color: red; /* Red text */
-        }
-
-        /* Unordered list styles */
-        ul {
-            list-style-type: none; /* Remove default bullets */
-            padding: 0; /* Remove default padding */
-        }
-
-        li {
-            background-color: gray; /* Default background color */
-            width: 50%; /* Set width to 50% */
-            padding: 10px; /* Padding for each item */
-            margin: 5px 0; /* Margin between items */
-        }
-
-        /* Odd items will have a white background */
-        li:nth-child(odd) {
-            background-color: white;
-        }
-
-        /* First and last items font size */
-        li:first-child,
-        li:last-child {
-            font-size: 22px;
-        }
-
-        /* Third-to-last item background color */
-        li:nth-last-child(2) {
-            background-color: pink;
-        }
+		
+		:root{
+			background-color:rgb(135, 206, 235)
+		}
+        .first-child{
+			background-color:black;
+			color:white;
+		}
+		.nth-child(2){
+             			
+		}
+		.last-child{
+			color:red;
+		}
+		li{
+			width:50%;
+			padding:10px;
+		}
+		.first-item{
+			background-color:white;
+			font-size:22px;
+		}
+		.second-item{
+			background-color:gray;
+		}
+		.third-item{
+			background-color:pink;
+		}
     </style>
 </head>
 <body>
-    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis, facere incidunt quibusdam a suscipit odio iste in repudiandae consectetur dolorum excepturi, nihil officiis!</p>
-    <p>Second paragraph with standard text color.</p>
-    <p>Third paragraph with red text.</p>
+    <p class="first-child">Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis, facere incidunt quibusdam a suscipit odio iste in repudiandae consectetur dolorum excepturi, nihil officiis!</p>
+    <p class="nth-child(2)">Second paragraph with standard text color.</p>
+    <p class="last-child">Third paragraph with red text.</p>
 
     <ul>
-        <li>First Item</li>
-        <li>Second Item</li>
-        <li>Third Item</li>
-        <li>Fourth Item</li>
-        <li>Fifth Item</li>
+        <li class="first-item">First Item</li>
+        <li class="second-item">Second Item</li>
+        <li class="third-item">Third Item</li>
+        <li class="second-item">Fourth Item</li>
+        <li class="first-item">Fifth Item</li>
     </ul>
 </body>
 </html>

@@ -8,17 +8,18 @@
 		
 		:root{
 			background-color:rgb(135, 206, 235);
-		}
-        p:first-child {
-			background-color: black;
-			color:white;
-		}
-		p:nth-child(2) {
-             			
-		}
-		p:last-child {
-			color:red;
-		}
+		.first-child {
+    background-color: black;
+    color: white;
+}
+
+.nth-child(2) {
+    color: black; /* Ya koi aur color jo aap chahte hain */
+}
+
+.last-child {
+    color: red;
+}
 		li {
 			background-color:gray;
 			width:50%;
@@ -37,9 +38,9 @@
     </style>
 </head>
 <body>
-    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis, facere incidunt quibusdam a suscipit odio iste in repudiandae consectetur dolorum excepturi, nihil officiis!</p>
-    <p>Second paragraph with standard text color.</p>
-    <p>Third paragraph with red text.</p>
+    <p class="first-child">Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis, facere incidunt quibusdam a suscipit odio iste in repudiandae consectetur dolorum excepturi, nihil officiis!</p>
+    <p class="nth-child(2)">Second paragraph with standard text color.</p>
+    <p class="last-child">Third paragraph with red text.</p>
 
     <ul>
         <li>First Item</li>
